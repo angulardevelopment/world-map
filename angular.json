@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "world-map"
+  "defaultProject": "world-map",
+  "cli": {
+    "analytics": "8f7b12e4-5bf0-4dfa-92a9-25ebd35b5d1d"
+  }
 }
