@@ -1,5 +1,4 @@
 <div>
-  <!--    Context Classes  -->
   <div class="panel panel-default">
 
       <div class="panel-heading">
@@ -19,51 +18,46 @@
                       <tr class="success">
                           <td>1</td>
                           <td>AFRICA</td>
-                          <td>54</td>
+                          <td>{{africaCountries.length}}</td>
                       </tr>
                       <tr class="info">
                           <td>2</td>
                           <td>ASIA</td>
-                          <td>50</td>
+                          <td>{{asiaCountries.length}}</td>
                       </tr>
                       <tr class="warning">
                           <td>3</td>
                           <td>EUROPE</td>
-                          <td>51</td>
+                          <td>{{europeCountries.length}}</td>
                       </tr>
                       <tr class="danger">
                           <td>4</td>
                           <td>N.AMERICA </td>
-                          <td>23</td>
+                          <td>{{northCOuntries.length}}</td>
                       </tr>
                       <tr class="danger">
-                          <td>4</td>
-                          <td>S.AMERIA </td>
-                          <td>12</td>
+                          <td>5</td>
+                          <td>S.AMERICA </td>
+                          <td>{{southCountries.length}}</td>
                       </tr>
                       <tr class="warning">
-                          <td>4</td>
-                          <td>ANTARTICA</td>
+                          <td>6</td>
+                          <td>ANTARCTICA</td>
                           <td>-</td>
                       </tr>
                       <tr class="info">
-                          <td>4</td>
+                          <td>7</td>
                           <td>AUSTRALIA</td>
-                          <td>-</td>
+                          <td>{{ausStates.length}}</td>
                       </tr>
                   </tbody>
               </table>
           </div>
       </div>
   </div>
-  <!--  end  Context Classes  -->
 </div>
 
 
-<h2 class="head">USA states-(50)</h2>
-<ul>
-  <li *ngFor="let count of usaCountries">{{count}}</li>
-</ul>
 <h2 class="head"> EUROPE-</h2>
 
 <ul>
@@ -96,16 +90,5 @@
   <li *ngFor="let i of ausStates">{{i}}</li>
 </ul>
 
-<h2 class="head"> Germany States-</h2>
-
-<ul>
-  <li *ngFor="let i of germnyStates">{{i}}</li>
-</ul>
-
-<h2 class="head"> Netherland or holland Provinces(12)</h2>
-
-<ul>
-  <li *ngFor="let i of netherlandpro">{{i}}</li>
-</ul>
 
 
