@@ -100,28 +100,12 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
-          }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "world-map:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "world-map:serve:production"
-            }
           }
         }
       }
@@ -129,6 +113,7 @@
   },
   "defaultProject": "world-map",
   "cli": {
-    "analytics": "8f7b12e4-5bf0-4dfa-92a9-25ebd35b5d1d"
+    "analytics": "8f7b12e4-5bf0-4dfa-92a9-25ebd35b5d1d",
+    "defaultCollection": "@angular-eslint/schematics"
   }
 }

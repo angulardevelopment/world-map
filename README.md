@@ -24,6 +24,7 @@ Simple WorldMap app to find countries.
 
 ### useful commands to run project
 - npm run start
+remove ununsed imports - rules
 
 ## Subscribe and Stay Updated!
 
