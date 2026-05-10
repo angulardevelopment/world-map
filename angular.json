@@ -23,7 +23,6 @@
             "outputPath": "dist/world-map",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
@@ -68,25 +67,24 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "world-map:build"
+            "buildTarget": "world-map:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "world-map:build:production"
+              "buildTarget": "world-map:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "world-map:build"
+            "buildTarget": "world-map:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
@@ -111,9 +109,7 @@
       }
     }
   },
-  "defaultProject": "world-map",
   "cli": {
-    "analytics": "8f7b12e4-5bf0-4dfa-92a9-25ebd35b5d1d",
-    "defaultCollection": "@angular-eslint/schematics"
+    "analytics": "8f7b12e4-5bf0-4dfa-92a9-25ebd35b5d1d"
   }
 }
